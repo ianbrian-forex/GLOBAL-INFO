@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <button id="darkModeBtn">🌙 Dark Mode</button>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GLOBAL INFO</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+
+    <h1>🌍 GLOBAL INFO</h1>
+
+    <p>
+        World News • Trending Stories • Global Updates
+    </p>
+
+</header>
+
+<section class="search-section">
+    <input type="text" placeholder="Search news..." id="searchBox">
+    <button onclick="searchNews()">Search</button>
+</section>
+
+<section class="breaking-news">
+    🔴 BREAKING: Latest global stories updated daily
+</section>
+
+<nav>
+    <a href="#">Home</a>
+    <a href="#">World</a>
+    <a href="#">Technology</a>
+    <a href="#">Science</a>
+    <a href="#">Africa</a>
+</nav>
+
+<section class="hero">
+
+    <div class="hero-content">
+
+        <h2>Breaking Global Stories</h2>
+
+        <p>
+            Bringing you the latest world news, technology,
+            science discoveries, and amazing stories from across the globe.
+        </p>
+
+        <a href="article1.html" class="read-btn">
+            Read Featured Story
+        </a>
+
+    </div>
+
+</section>
+
+<div class="filters">
+    <button onclick="filterNews('all')">All</button>
+    <button onclick="filterNews('world')">World</button>
+    <button onclick="filterNews('technology')">Technology</button>
+    <button onclick="filterNews('africa')">Africa</button>
+</div>
+
+<section class="news-grid"><h3>
+
+<article class="card" data-category="world">
+
+    <img src="images/news1.jpg" alt="World News">
+
+    <h3>World News</h3>
+
+    <p>
+        Stay informed with the latest major events happening around the world.
+    </p>
+
+    <a href="article1.html" class="card-btn">
+        Read More
+    </a>
+
+</article>
+
+<article class="card" data-category="technology">
+    <h3>Technology News</h3>
+    <p>AI and tech developments.</p>
+</article>
+
+<article class="card" data-category="africa">
+    <h3>Africa News</h3>
+    <p>Stories from across Africa.</p>
+</article>
+
+</section>
+
+<footer>
+    <p>Developed By: Ian .K. Brian</p>
+    <p>© 2026 GLOBAL INFO</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
