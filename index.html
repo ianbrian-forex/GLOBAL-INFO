@@ -4,255 +4,352 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GLOBAL INFO</title>
+    <title>GLOBAL INFO | World News, Technology, Science & Africa Updates</title>
+    <meta name="description"
+        content="GLOBAL INFO delivers world news, technology updates, science discoveries, and stories from Africa and around the globe.">
+
+    <meta name="keywords" content="world news, global news, technology news, science news, Africa news, GLOBAL INFO">
+
+    <meta name="author" content="GLOBAL INFO">
+    <link rel="icon" type="image/png" href="favicon.png">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<button id="darkModeBtn">🌙 Dark Mode</button>
-
-<header class="site-header">
-
-    <div class="logo">
-    🌍 GLOBAL INFO
-</div>
-
-    <p>World News • Trending Stories • Global Updates</p>
-
-</header>
-
-<section class="search-section">
-    <input type="text" placeholder="Search news..." id="searchBox">
-    <button onclick="searchNews()">Search</button>
-</section>
-
-<section class="breaking-news">
-    <span>🔴 BREAKING NEWS</span>
-    <div class="ticker">
-        Global stories, technology, science and Africa news — updated daily.
-    </div>
-</section>
-
-<nav>
-    <a href="index.html">Home</a>
-    <a href="world.html">World</a>
-    <a href="technology.html">Technology</a>
-    <a href="science.html">Science</a>
-    <a href="africa.html">Africa</a>
-</nav>
-
-<section class="hero">
-
-    <div class="hero-content">
-
-        <h2>Breaking Global Stories</h2>
-
+    <button id="darkModeBtn">🌙 Dark Mode</button>
+    <div class="top-bar">
         <p>
-            Bringing you the latest world news, technology,
-            science discoveries, and amazing stories from across the globe.
+            🌍 Welcome to GLOBAL INFO | World News, Technology, Science & Africa Updates
         </p>
-
-        <a href="article1.html" class="read-btn">
-            Read Featured Story
-        </a>
-
     </div>
 
-</section>
+    <header class="site-header">
 
-<section class="categories">
-
-    <h2>Explore Categories</h2>
-
-    <div class="category-grid">
-
-        <a href="world.html" class="category-box">
-            🌍 World
-        </a>
-
-        <a href="technology.html" class="category-box">
-            💻 Technology
-        </a>
-
-        <a href="science.html" class="category-box">
-            🔬 Science
-        </a>
-
-        <a href="africa.html" class="category-box">
-            🌍 Africa
-        </a>
-
-    </div>
-
-</section>
-
-<section class="updates">
-
-    <h2>Latest Updates</h2>
-
-    <ul>
-
-        <li>🌍 World leaders meet to discuss global challenges.</li>
-
-        <li>💻 Artificial Intelligence continues rapid growth.</li>
-
-        <li>🔬 Scientists make new discoveries in space research.</li>
-
-        <li>🌍 Africa's technology sector continues expanding.</li>
-
-    </ul>
-
-</section>
-
-<section class="trending">
-
-    <h2>🔥 Trending Stories</h2>
-
-    <div class="trending-grid">
-
-        <div class="trend-card">
-            <h3>Global Technology Boom</h3>
-            <p>AI and automation continue reshaping industries.</p>
+        <div class="logo">
+            🌍 GLOBAL INFO
         </div>
 
-        <div class="trend-card">
-            <h3>Space Exploration</h3>
-            <p>Scientists prepare for new missions beyond Earth.</p>
+        <p>World News • Trending Stories • Global Updates</p>
+
+    </header>
+
+    <section class="search-section">
+        <input type="text" placeholder="Search news..." id="searchBox">
+        <button onclick="searchNews()">Search</button>
+    </section>
+
+    <section class="breaking-news">
+        <span>🔴 BREAKING NEWS</span>
+        <div class="ticker">
+            Global stories, technology, science and Africa news — updated daily.
         </div>
+    </section>
 
-        <div class="trend-card">
-            <h3>Africa Rising</h3>
-            <p>Innovation and business growth continue across Africa.</p>
-        </div>
-
-    </div>
-
-</section>
-
-
-<div class="filters">
-    <button onclick="filterNews('all')">All</button>
-    <button onclick="filterNews('world')">World</button>
-    <button onclick="filterNews('technology')">Technology</button>
-    <button onclick="filterNews('africa')">Africa</button>
-</div>
-
-<section class="latest-news">
-    <h2>Latest News</h2>
-    <p>Stay updated with the latest stories from around the world.</p>
-</section>
-
-<section class="news-grid">
-
-    <article class="card" data-category="world">
-
-        <img src="news.jpg" alt="World News">
-
-        <h3>World News</h3>
-
-        <p>
-            Stay informed with the latest major events happening around the world.
-        </p>
-
-        <a href="article-world.html" class="card-btn">
-            Read More
-        </a>
-
-    </article>
-
-    <article class="card" data-category="technology">
-
-        <img src="news.jpg" alt="Technology News">
-
-        <h3>Technology News</h3>
-
-        <p>
-            Discover the latest developments in technology, AI and innovation.
-        </p>
-
-        <a href="article-tech.html" class="card-btn">
-            Read More
-        </a>
-
-    </article>
-
-    <article class="card" data-category="africa">
-
-        <img src="news.jpg" alt="Africa News">
-
-        <h3>Africa News</h3>
-
-        <p>
-            Explore stories, culture and developments from across Africa.
-        </p>
-
-        <a href="article-africa.html" class="card-btn">
-            Read More
-        </a>
-
-    </article>
-
-</section>
-<section class="about-site">
-
-    <h2>About GLOBAL INFO</h2>
-
-    <p>
-        GLOBAL INFO brings you world news, technology updates,
-        scientific discoveries and stories from across Africa.
-        Our goal is to keep readers informed with reliable and
-        engaging content from around the globe.
-    </p>
-
-</section>
-
-<section class="newsletter">
-
-    <h2>Stay Updated</h2>
-
-    <p>
-        Subscribe to receive the latest global news and updates.
-    </p>
-
-    <input type="email" placeholder="Enter your email">
-
-    <button>Subscribe</button>
-
-</section>
-
-<footer class="site-footer">
-
-    <h2>🌍 GLOBAL INFO</h2>
-
-    <p>
-        World News • Trending Stories • Global Updates
-    </p>
-
-    <div class="footer-links">
+    <nav>
         <a href="index.html">Home</a>
         <a href="world.html">World</a>
         <a href="technology.html">Technology</a>
         <a href="science.html">Science</a>
         <a href="africa.html">Africa</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <section class="hero">
+
+        <div class="hero-content">
+
+            <h2>Breaking Global Stories</h2>
+
+            <p>
+                Bringing you the latest world news, technology,
+                science discoveries, and amazing stories from across the globe.
+            </p>
+
+            <a href="article1.html" class="read-btn">
+                Read Featured Story
+            </a>
+
+        </div>
+
+    </section>
+    <section class="featured-stories">
+
+        <h2>⭐ Featured Stories</h2>
+
+        <div class="story-card">
+            <h3><a href="lake-nakuru.html">Lake Nakuru: Kenya's Pink Paradise</a></h3>
+            <p>Discover one of Africa's most beautiful lakes, famous for flamingos, wildlife and breathtaking scenery.
+            </p>
+        </div>
+
+        <div class="story-card">
+            <h3><a href="mauritius-waterfall.html">The Underwater Waterfall of Mauritius</a></h3>
+            <p>A natural illusion that makes the ocean appear to flow beneath the sea.</p>
+        </div>
+
+        <div class="story-card">
+            <h3><a href="catatumbo-lightning.html">The Place Where Lightning Never Stops</a></h3>
+            <p>One of the world's most fascinating natural weather phenomena.</p>
+        </div>
+
+    </section>
+    <section class="featured-article">
+
+        <img src="news.jpg" alt="Featured Story">
+
+        <div class="featured-content">
+
+            <h2>Featured Story</h2>
+
+            <h3>Global Technology and Innovation Continue to Shape the Future</h3>
+
+            <p><strong>By GLOBAL INFO Staff</strong> | September 17, 2026</p>
+
+            <p>
+                From artificial intelligence to scientific discoveries,
+                innovation continues to transform the way people live and work.
+            </p>
+
+            <a href="article-tech.html" class="read-btn">
+                Read Full Story
+            </a>
+
+        </div>
+
+    </section>
+
+    <section class="categories">
+
+        <h2>Explore Categories</h2>
+
+        <div class="category-grid">
+
+            <a href="world.html" class="category-box">
+                🌍 World
+            </a>
+
+            <a href="technology.html" class="category-box">
+                💻 Technology
+            </a>
+
+            <a href="science.html" class="category-box">
+                🔬 Science
+            </a>
+
+            <a href="africa.html" class="category-box">
+                🌍 Africa
+            </a>
+
+        </div>
+
+    </section>
+
+    <section class="updates">
+
+        <h2>Latest Updates</h2>
+
+        <ul>
+
+            <li>🌍 World leaders meet to discuss global challenges.</li>
+
+            <li>💻 Artificial Intelligence continues rapid growth.</li>
+
+            <li>🔬 Scientists make new discoveries in space research.</li>
+
+            <li>🌍 Africa's technology sector continues expanding.</li>
+
+        </ul>
+
+    </section>
+
+    <section class="trending">
+
+        <h2>🔥 Trending Stories</h2>
+
+        <div class="trending-grid">
+
+            <div class="trend-card">
+                <h3>Global Technology Boom</h3>
+                <p>AI and automation continue reshaping industries.</p>
+            </div>
+
+            <div class="trend-card">
+                <h3>Space Exploration</h3>
+                <p>Scientists prepare for new missions beyond Earth.</p>
+            </div>
+
+            <div class="trend-card">
+                <h3>Africa Rising</h3>
+                <p>Innovation and business growth continue across Africa.</p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <div class="filters">
+        <button onclick="filterNews('all')">All</button>
+        <button onclick="filterNews('world')">World</button>
+        <button onclick="filterNews('technology')">Technology</button>
+        <button onclick="filterNews('africa')">Africa</button>
     </div>
 
-    <div class="social-links">
+    <section class="latest-news">
+        <h2>Latest News</h2>
+        <p>Stay updated with the latest stories from around the world.</p>
+    </section>
 
-    <a href="#">Facebook</a>
-    <a href="#">X</a>
-    <a href="#">Instagram</a>
-    <a href="#">YouTube</a>
+    <section class="news-grid">
 
-</div>
+        <article class="card">
 
-    <p class="copyright">
-        © 2026 GLOBAL INFO. All rights reserved.
-    </p>
+            <img src="news.jpg" alt="Lake Nakuru">
+            <p><strong>⭐ Most Popular Story</strong></p>
+            <h3>Lake Nakuru: Kenya's Pink Paradise</h3>
 
-</footer>
+            <p>
+                Discover one of Africa's most beautiful lakes, famous for
+                flamingos, wildlife and breathtaking scenery.
+            </p>
 
-<script src="script.js"></script>
+            <a href="lake-nakuru.html" class="card-btn">
+                Read More
+            </a>
+
+        </article>
+        <article class="card">
+
+            <img src="news.jpg" alt="Mauritius Waterfall">
+
+            <h3>🌊 The Underwater Waterfall of Mauritius</h3>
+
+            <p>
+                One of Earth's most incredible natural illusions hidden in the Indian Ocean.
+            </p>
+
+            <a href="mauritius-waterfall.html" class="card-btn">
+                Read More
+            </a>
+
+        </article>
+        <article class="card">
+
+            <img src="news.jpg" alt="Catatumbo Lightning">
+
+            <h3>⚡ The Place Where Lightning Never Stops</h3>
+
+            <p>
+                Discover the incredible location where lightning storms occur with amazing frequency.
+            </p>
+
+            <a href="catatumbo-lightning.html" class="card-btn">
+                Read More
+            </a>
+
+        </article>
+
+        <article class="card" data-category="technology">
+
+            <img src="news.jpg" alt="Technology News">
+
+            <h3>Technology News</h3>
+
+            <p>
+                Discover the latest developments in technology, AI and innovation.
+            </p>
+
+            <a href="article-tech.html" class="card-btn">
+                Read More
+            </a>
+
+        </article>
+
+        <article class="card" data-category="africa">
+
+            <img src="news.jpg" alt="Africa News">
+
+            <h3>Africa News</h3>
+
+            <p>
+                Explore stories, culture and developments from across Africa.
+            </p>
+
+            <a href="article-africa.html" class="card-btn">
+                Read More
+            </a>
+
+        </article>
+
+    </section>
+    <section class="about-site">
+
+        <h2>About GLOBAL INFO</h2>
+
+        <p>
+            GLOBAL INFO brings you world news, technology updates,
+            scientific discoveries and stories from across Africa.
+            Our goal is to keep readers informed with reliable and
+            engaging content from around the globe.
+        </p>
+
+    </section>
+
+    <section class="newsletter">
+
+        <h2>Stay Updated</h2>
+
+        <p>
+            Subscribe to receive the latest global news and updates.
+        </p>
+
+        <input type="email" placeholder="Enter your email">
+
+        <button>Subscribe</button>
+
+    </section>
+
+    <footer class="site-footer">
+
+        <h2>🌍 GLOBAL INFO</h2>
+
+        <p>
+            World News • Trending Stories • Global Updates
+        </p>
+
+        <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="world.html">World</a>
+            <a href="technology.html">Technology</a>
+            <a href="science.html">Science</a>
+            <a href="africa.html">Africa</a>
+        </div>
+
+        <div class="social-links">
+
+            <a href="#">Facebook</a>
+            <a href="#">X</a>
+            <a href="#">Instagram</a>
+            <a href="#">YouTube</a>
+
+        </div>
+        <footer>
+            <p>&copy; 2026 GLOBAL INFO. All Rights Reserved.</p>
+
+            <p>
+                <a href="about.html">About</a> |
+                <a href="contact.html">Contact</a> |
+                <a href="privacy.html">Privacy Policy</a> |
+                <a href="disclaimer.html">Disclaimer</a> |
+                <a href="terms.html">Terms of Use</a>
+            </p>
+        </footer>
+
+    </footer>
+
+    <script src="script.js"></script>
 
 </body>
 
