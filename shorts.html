@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>GLOBAL INFO Shorts</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        body {
+            margin: 0;
+            background: black;
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+
+        .shorts-container {
+            height: 100vh;
+            overflow-y: scroll;
+            scroll-snap-type: y mandatory;
+        }
+
+        .video-card {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            scroll-snap-align: start;
+            position: relative;
+            background: black;
+        }
+
+        .video-card iframe {
+            width: 100%;
+            max-width: 420px;
+            height: 90vh;
+        }
+
+        .video-info {
+            position: absolute;
+            bottom: 40px;
+            left: 20px;
+            max-width: 300px;
+        }
+
+        .video-info h3 {
+            margin: 0;
+        }
+
+        .video-info p {
+            margin-top: 10px;
+        }
+
+        .actions {
+            position: absolute;
+            right: 20px;
+            bottom: 120px;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .actions button {
+            width: 50px;
+            height: 50px;
+            border: none;
+            border-radius: 50%;
+            font-size: 20px;
+            cursor: pointer;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="shorts-container">
+
+        <div class="video-card">
+
+            <iframe src="https://youtube.com/shorts/xlNeUqA6u5c?si=8ObazBSlljgktil0" allowfullscreen>
+            </iframe>
+
+            <div class="video-info">
+                <h3>Lake Nakuru</h3>
+                <p>Amazing wildlife and flamingos.</p>
+                <div class="actions">
+                    <button>❤️</button>
+                    <button>💬</button>
+                    <button>🔗</button>
+                </div>
+
+            </div>
+
+
+        </div>
+
+        <div class="video-card">
+
+            <iframe src="https://youtube.com/shorts/RK1GyPwznbc?si=HEDRk9WOLegNrbCm" allowfullscreen>
+            </iframe>
+
+            <div class="video-info">
+                <h3>Mauritius Waterfall</h3>
+                <p>The incredible underwater illusion.</p>
+            </div>
+            <div class="actions">
+                <button>❤️</button>
+                <button>💬</button>
+                <button>🔗</button>
+            </div>
+
+        </div>
+
+    </div>
+    <script>
+
+        const container = document.querySelector(".shorts-container");
+
+        container.addEventListener("scroll", () => {
+
+            const bottom =
+                container.scrollHeight -
+                container.scrollTop <=
+                container.clientHeight + 5;
+
+            if (bottom) {
+
+                console.log("Load more videos here");
+
+            }
+
+        });
+
+    </script>
+</body>
+
+</html>
